@@ -1,0 +1,11 @@
+{
+  "listen": "127.0.0.1:8118",
+  "dial_timeout": "10s",
+  "upstreams": {
+    "socks": { "type": "socks5", "address": "127.0.0.1:1080" }
+  },
+  "rules": [
+    { "type": "domain-suffix", "values": ["ru", "su", "рф"], "route": "direct" }
+  ],
+  "default_route": "socks"
+}
