@@ -1,5 +1,5 @@
 {
-  "listen": "127.0.0.1:8118",
+  "listen": "127.0.0.1:10808",
   "dial_timeout": "10s",
   "upstreams": {
     "socks": { "type": "socks5", "address": "127.0.0.1:1080" }

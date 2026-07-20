@@ -38,7 +38,7 @@ type Rule struct {
 
 func Default() *Config {
 	return &Config{
-		Listen:      "127.0.0.1:8118",
+		Listen:      "127.0.0.1:10808",
 		DialTimeout: "10s",
 		Upstreams: map[string]Upstream{
 			"socks": {Type: "socks5", Address: "127.0.0.1:1080"},

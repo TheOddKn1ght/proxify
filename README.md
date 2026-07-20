@@ -14,7 +14,7 @@ locally.
 ```sh
 go build -o proxify .
 
-# Defaults: listen on 127.0.0.1:8118, SOCKS5 at 127.0.0.1:1080
+# Defaults: listen on 127.0.0.1:10808, SOCKS5 at 127.0.0.1:1080
 ./proxify
 
 # Overrides
@@ -27,9 +27,9 @@ go build -o proxify .
 Point an app at it:
 
 ```sh
-curl -x http://127.0.0.1:8118 https://ya.ru        # direct
-curl -x http://127.0.0.1:8118 https://example.com  # via SOCKS5
-export https_proxy=http://127.0.0.1:8118 http_proxy=http://127.0.0.1:8118
+curl -x http://127.0.0.1:10808 https://ya.ru        # direct
+curl -x http://127.0.0.1:10808 https://example.com  # via SOCKS5
+export https_proxy=http://127.0.0.1:10808 http_proxy=http://127.0.0.1:10808
 ```
 
 ## Configuration
@@ -39,7 +39,7 @@ Without `-config`, built-in defaults apply (equivalent to
 
 ```json
 {
-  "listen": "127.0.0.1:8118",
+  "listen": "127.0.0.1:10808",
   "dial_timeout": "10s",
   "upstreams": {
     "socks": { "type": "socks5", "address": "127.0.0.1:1080" }

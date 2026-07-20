@@ -20,7 +20,7 @@ import (
 func main() {
 	var (
 		configPath = flag.String("config", "", "path to JSON config file (optional; built-in defaults apply)")
-		listen     = flag.String("listen", "", "listen address, overrides config (default 127.0.0.1:8118)")
+		listen     = flag.String("listen", "", "listen address, overrides config (default 127.0.0.1:10808)")
 		socksAddr  = flag.String("socks5", "", "SOCKS5 server address, overrides config (default 127.0.0.1:1080)")
 		verbose    = flag.Bool("v", false, "debug logging")
 	)
